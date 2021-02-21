@@ -24,7 +24,7 @@
     "dynamic"
   ],
   "author": "Michael Martinsky",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mmartinsky/variable-width-grid/issues"
   },
