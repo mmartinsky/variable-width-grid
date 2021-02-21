@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import useComponentSize from "@rehooks/component-size";
 import { determineNumColumns } from "./utils";
 
-export interface VariableWidthGridProps {
+export type VariableWidthGridProps = {
   children: any;
-  columnGap: number;
-}
+  columnGap?: number;
+};
 
 export function VariableWidthGrid(props: VariableWidthGridProps) {
   const { children, columnGap = 10 } = props;
