@@ -1,13 +1,10 @@
-import times from "lodash/times";
-import isEmpty from "lodash/isEmpty";
-
 export function determineNumColumns(width: number, sizes: number[], columnGap: number): number {
-  if (isEmpty(sizes)) {
+  if (!sizes || !sizes.length) {
     return 0;
   }
   let numColumns = sizes.length;
   while (numColumns > 0) {
-    const startingArray = times(numColumns, (_) => []);
+    const startingArray = Array.from({ length: numColumns }, (_) => []);
     const proposedColumnTracks = sizes.reduce((acc, currItem, idx) => {
       acc[idx % numColumns].push(currItem);
       return acc;
