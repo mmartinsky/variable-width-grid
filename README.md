@@ -8,7 +8,27 @@ When you need to responsively lay out a dynamic number of dynamically sized item
 
 `npm install react-variable-width-grid --save`
 
+## Usage
+
+```jsx
+function App() {
+  const items = [...Array(20).keys()].map((_, idx) => {
+    if (idx % 5 === 0) {
+      return <span key={idx}>Long Item {idx}</span>;
+    }
+    return <span key={idx}>Item {idx}</span>;
+  });
+  return <VariableWidthGrid>{items}</VariableWidthGrid>;
+}
+```
+
 ## Props
+
+| Name      | Required | Type   | Default   | Description                              |
+| --------- | -------- | ------ | --------- | ---------------------------------------- |
+| children  | Y        | Node   | undefined | The children to display in a grid layout |
+| columnGap | N        | number | 10        | The width of the column gap in px.       |
+|           |          |        |           |                                          |
 
 ## FAQ
 
