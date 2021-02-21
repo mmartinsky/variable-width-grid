@@ -1,24 +1,22 @@
 import React from "react";
-
-import VariableWidthGrid from "../VariableWidthGrid";
+import { ResizableBox } from "react-resizable";
+import { VariableWidthGrid } from "../VariableWidthGrid";
+import "react-resizable/css/styles.css";
 
 export default {
-  title: "Example/VariableWidthGrid",
+  title: "Example",
   component: VariableWidthGrid,
 };
 
-const Template = (args) => <VariableWidthGrid {...args} />;
-
 const c = [...Array(20).keys()].map((_, idx) => {
+  if (idx % 5 === 0) {
+    return <span key={idx}>Long Item {idx}</span>;
+  }
   return <span key={idx}>Item {idx}</span>;
 });
 
-export const Default = Template.bind({});
-Default.args = {
-  children: c,
-};
-
-export const SingleItem = Template.bind({});
-SingleItem.args = {
-  children: <span>Item 1</span>,
-};
+export const Sandbox = (args) => (
+  <ResizableBox width={400} style={{ border: "1px solid black" }}>
+    <VariableWidthGrid>{c}</VariableWidthGrid>
+  </ResizableBox>
+);
