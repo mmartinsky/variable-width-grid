@@ -10,6 +10,7 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
+    "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook --no-dll"
   },
