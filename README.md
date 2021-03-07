@@ -2,6 +2,10 @@
 
 When you need to responsively lay out a dynamic number of dynamically sized items.
 
+![Alt Text](./rvwg.gif)
+
+### [Demo](https://mmartinsky.github.io/react-variable-width-grid/?path=/story/example--sandbox)
+
 ## Installation
 
 `yarn add react-variable-width-grid`
