@@ -12,7 +12,8 @@
     "test": "jest",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     "@storybook/addon-essentials": "^6.1.18",
     "@storybook/addon-links": "^6.1.18",
     "@storybook/react": "^6.1.18",
+    "@storybook/storybook-deployer": "^2.8.7",
     "babel-loader": "^8.2.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
