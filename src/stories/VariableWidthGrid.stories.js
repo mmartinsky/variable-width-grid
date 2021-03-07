@@ -17,6 +17,10 @@ const c = [...Array(20).keys()].map((_, idx) => {
 
 export const Sandbox = (args) => (
   <ResizableBox width={400} style={{ border: "1px solid black" }}>
-    <VariableWidthGrid>{c}</VariableWidthGrid>
+    <VariableWidthGrid {...args}>{c}</VariableWidthGrid>
   </ResizableBox>
 );
+
+Sandbox.args = {
+  columnGap: 10,
+};
