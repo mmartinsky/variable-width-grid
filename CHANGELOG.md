@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.4 - Mar-06-2021
+
+Switch types packages to dev dependencies
+
 ## 0.0.3 - Feb-21-2021
 
 Remove `lodash` dependency to reduce bundle size
