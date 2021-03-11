@@ -1,5 +1,7 @@
 # React Variable Width Grid
 
+![npm](https://img.shields.io/npm/v/react-variable-width-grid)
+
 When you need to responsively lay out a dynamic number of dynamically sized items.
 
 ![Alt Text](./rvwg.gif)
